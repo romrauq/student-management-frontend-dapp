@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+import Navbar from "./components/Navbar";
 
 function Modal({ closeModal, title, mode }) {
 	const [email, setEmail] = useState("");
@@ -112,17 +113,7 @@ function LandingPage() {
 
 	return (
 		<div>
-			<nav className="navbar">
-				<div className="logo">Logo</div>
-				<div className="nav-items">
-					<button className="register-button" onClick={() => openModal("register")}>
-						Register
-					</button>
-					<button className="sign-in-button" onClick={() => openModal("signin")}>
-						Sign In
-					</button>
-				</div>
-			</nav>
+			<Navbar openModal={openModal} /> {/* Pass openModal as a prop */}
 			<div className="content">
 				<div className="centered-text">
 					<h1>Welcome to Student Information Portal</h1>
