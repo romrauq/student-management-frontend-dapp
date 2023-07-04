@@ -116,7 +116,7 @@ function LandingPage() {
 			<Navbar openModal={openModal} /> {/* Pass openModal as a prop */}
 			<div className="content">
 				<div className="centered-text">
-					<h1>Welcome to Student Information Portal</h1>
+					<h1>Welcome to Student Management Dapp</h1>
 				</div>
 			</div>
 			<footer className="footer">
